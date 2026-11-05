@@ -1,0 +1,3 @@
+<?php $title='Login Admin'; require __DIR__.'/../layouts/header.php'; ?>
+<div class="login-page"><div class="login-card"><div class="logo">🌸</div><h1>Admin Login</h1><p>Masuk untuk mengelola website florist</p><?php if($error): ?><div class="alert error"><?=e($error)?></div><?php endif; ?><form method="post"><label>Username<input name="username" placeholder="Masukkan username" autocomplete="username" autofocus required></label><label>Password<input type="password" name="password" placeholder="Masukkan password" autocomplete="current-password" required></label><button class="btn primary">Login</button></form></div></div>
+<?php require __DIR__.'/../layouts/footer.php'; ?>
